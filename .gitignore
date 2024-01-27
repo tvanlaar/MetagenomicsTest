@@ -1,5 +1,6 @@
 .DS_Store
 fastqc_out
 hmp*
-humann*
+humann_dbs
+humann_out
 knead*
