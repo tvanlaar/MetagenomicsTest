@@ -1,0 +1,5 @@
+.DS_Store
+fastqc_out
+hmp*
+humann*
+knead*
