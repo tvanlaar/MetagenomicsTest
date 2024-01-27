@@ -1,0 +1,19 @@
+# Pathway	SRS011086_kneaddata_Abundance
+UNMAPPED	19753.5691356965
+UNINTEGRATED	5520.0071214799
+UNINTEGRATED|g__Streptococcus.s__Streptococcus_parasanguinis	2172.2593984410
+UNINTEGRATED|g__Streptococcus.s__Streptococcus_salivarius	1445.6830203148
+PWY-6609: adenine and adenosine salvage III	16.7350713165
+PWY-6609: adenine and adenosine salvage III|g__Streptococcus.s__Streptococcus_parasanguinis	7.0977960037
+PWY-6151: S-adenosyl-L-methionine salvage I	9.5928952529
+PWY-6121: 5-aminoimidazole ribonucleotide biosynthesis I	9.1450081963
+PWY-6121: 5-aminoimidazole ribonucleotide biosynthesis I|g__Streptococcus.s__Streptococcus_parasanguinis	3.6795424117
+PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II	8.4969185964
+PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II|g__Streptococcus.s__Streptococcus_salivarius	5.1635365739
+PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II|g__Streptococcus.s__Streptococcus_parasanguinis	3.3158873814
+PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis	8.4969185964
+PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis|g__Streptococcus.s__Streptococcus_salivarius	5.1635365739
+PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis|g__Streptococcus.s__Streptococcus_parasanguinis	3.3158873814
+PWY-4041: &gamma;-glutamyl cycle	7.5876380252
+PWY-4041: &gamma;-glutamyl cycle|g__Streptococcus.s__Streptococcus_parasanguinis	4.6889148310
+PWY-6123: inosine-5'-phosphate biosynthesis I	3.2604261551

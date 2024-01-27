@@ -1,0 +1,50 @@
+# Pathway	SRS016501_kneaddata_Abundance
+UNMAPPED	20216.2701995791
+UNINTEGRATED	9114.8267798997
+UNINTEGRATED|g__Haemophilus.s__Haemophilus_parainfluenzae	3235.4284694967
+UNINTEGRATED|g__Streptococcus.s__Streptococcus_parasanguinis	653.8785606501
+UNINTEGRATED|g__Streptococcus.s__Streptococcus_infantis	259.7898022780
+PWY-1042: glycolysis IV	23.4413994594
+PWY-7220: adenosine deoxyribonucleotides de novo biosynthesis II	19.4622785056
+PWY-7222: guanosine deoxyribonucleotides de novo biosynthesis II	19.4622785056
+PWY-7111: pyruvate fermentation to isobutanol (engineered)	18.4279098748
+VALSYN-PWY: L-valine biosynthesis	17.8717742813
+PWY-6609: adenine and adenosine salvage III	17.1332235106
+PWY-6609: adenine and adenosine salvage III|g__Streptococcus.s__Streptococcus_parasanguinis	4.2530568846
+PWY-6609: adenine and adenosine salvage III|g__Streptococcus.s__Streptococcus_infantis	1.6859852476
+PWY0-862: (5Z)-dodecenoate biosynthesis I	16.1483635871
+PWY0-862: (5Z)-dodecenoate biosynthesis I|g__Haemophilus.s__Haemophilus_parainfluenzae	14.1347609316
+PWY-7238: sucrose biosynthesis II	14.8967949177
+PWY-7238: sucrose biosynthesis II|g__Haemophilus.s__Haemophilus_parainfluenzae	10.6788312042
+ANAGLYCOLYSIS-PWY: glycolysis III (from glucose)	14.1778454007
+PWY-7663: gondoate biosynthesis (anaerobic)	14.1436248086
+PWY-7663: gondoate biosynthesis (anaerobic)|g__Haemophilus.s__Haemophilus_parainfluenzae	11.9138504405
+PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing)	14.0272968417
+PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing)|g__Haemophilus.s__Haemophilus_parainfluenzae	14.0272968417
+GLUCONEO-PWY: gluconeogenesis I	13.9810169301
+PWY-7208: superpathway of pyrimidine nucleobases salvage	13.5061867469
+PWY-7208: superpathway of pyrimidine nucleobases salvage|g__Haemophilus.s__Haemophilus_parainfluenzae	13.5061867469
+PWY-6151: S-adenosyl-L-methionine salvage I	13.0420472263
+PWY-6151: S-adenosyl-L-methionine salvage I|g__Haemophilus.s__Haemophilus_parainfluenzae	12.6890389157
+PWY-5667: CDP-diacylglycerol biosynthesis I	12.5273674072
+PWY-5667: CDP-diacylglycerol biosynthesis I|g__Haemophilus.s__Haemophilus_parainfluenzae	11.8112805766
+PWY0-1319: CDP-diacylglycerol biosynthesis II	12.5273674072
+PWY0-1319: CDP-diacylglycerol biosynthesis II|g__Haemophilus.s__Haemophilus_parainfluenzae	11.8112805766
+PWY-7197: pyrimidine deoxyribonucleotide phosphorylation	12.0924414756
+PWY-7199: pyrimidine deoxyribonucleosides salvage	11.9248978390
+PWY-7228: superpathway of guanosine nucleotides de novo biosynthesis I	11.8341507821
+PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II	11.8028102098
+PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis	11.8028102098
+ASPASN-PWY: superpathway of L-aspartate and L-asparagine biosynthesis	11.2353505444
+PWY-6125: superpathway of guanosine nucleotides de novo biosynthesis II	10.5488538913
+PWY-8178: pentose phosphate pathway (non-oxidative branch) II	9.9584598687
+HEMESYN2-PWY: heme b biosynthesis II (oxygen-independent)	9.9511319177
+HEMESYN2-PWY: heme b biosynthesis II (oxygen-independent)|g__Haemophilus.s__Haemophilus_parainfluenzae	9.9511319177
+PWY-7221: guanosine ribonucleotides de novo biosynthesis	9.5679383766
+NONOXIPENT-PWY: pentose phosphate pathway (non-oxidative branch) I	9.4688971843
+NONOXIPENT-PWY: pentose phosphate pathway (non-oxidative branch) I|g__Haemophilus.s__Haemophilus_parainfluenzae	7.9697613062
+PWY-I9: L-cysteine biosynthesis VI (from L-methionine)	9.3515398956
+PPGPPMET-PWY: ppGpp metabolism	9.1049219699
+UDPNAGSYN-PWY: UDP-N-acetyl-D-glucosamine biosynthesis I	9.0451406374
+PWY66-429: fatty acid biosynthesis initiation (mitochondria)	8.7794895278
+PWY-5695: inosine 5'-phosphate degradation	8.6850756395
