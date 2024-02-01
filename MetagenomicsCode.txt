@@ -1,0 +1,153 @@
+#Create new environment for metagenomics
+mamba create -n metagenomics python=3.6 
+
+#activate the environment
+mamba activate metagenomics
+
+#install necessary programs
+mamba install pip
+pip install metaphlan
+pip install humann
+
+#install databases
+##move to working directory first!!!
+humann_databases --download chocophlan full humann_dbs
+humann_databases --download uniref uniref90_diamond humann_dbs
+humann_databases --download utility_mapping full humann_dbs
+
+#test installation
+humann_test
+metaphlan --version
+
+#fastqc is a quality control program. Sequencing (like life) isn't always perfect. Install fastqc
+
+mamba install -c bioconda fastqc 
+
+#make a directory for quality control results
+mkdir fastqc_out
+
+#run fastqc on our samples
+fastqc -t 4 hmp_metagenomics_downsampled/fastq/* -o fastqc_out
+
+#explore your quality reports
+
+###PhiX is a known contaminant of illumina sequencing. We will need to remove the contaminating reads from our sequences. This could also be useful for removing any other contaminating reads you might anticipate. Since we're only worried about phiX, you should find the phiX fasta sequence on NCBI and download it to a folder called phiX in your metagenomics directory.
+
+bowtie2-build -f phiX/phiX.fasta phiX/phiX
+
+
+pip install kneaddata
+mamba install -c bioconda trimmomatic
+mamba install bioconda::trf
+
+##this command cleans up your reads by removing phiX contaminants. Because these are pre-processed reads (for size) there may not be very many. You will need to replace my path to trimmomatic with your specific path. 
+
+#when running the command below, you may get an error regarding trimmomatic. To fix that, navigate to your environment (usually found Users/<username>/miniforge3/envs/metagenomics then run the set of commands below
+
+mv bin/trimmomatic bin/trimmomatic_cmdline
+ln -s share/trimmomatic/trimmomatic.jar bin/trimmomatic
+ln -s share/trimmomatic/trimmomatic.jar bin/trimmomatic.jar
+
+##there are a couple of ways to run all the files at once because it would be very tedious to try to run each file individually, plus you can make more mistakes that way. One way to do it is to download a program called parallel (mamba install -c conda-forge parallel). This program will process all reads at the same time and is great if you have a powerful computer. 
+
+parallel kneaddata --un {} -db phiX/phiX --output kneaddata_out/ --trimmomatic /Users/triciavanlaar/miniforge3/envs/metagenomics/share/trimmomatic-0.39-2 -t 4 --remove-intermediate-output ::: hmp_metagenomics_downsampled/fastq/*.fastq
+
+
+##the other way to do that is create a script that will sequentially run through each read, one at a time. Then, all you have to do is run the script once and it will run all your sequences for you. Since they are being run one at a time, it is less computationally intensive. We will first create a file called run_kneaddata.sh. Then we will open that file and include the following script:
+
+#!/bin/bash
+
+for file in hmp_metagenomics_downsampled/fastq/*.fastq; do
+    kneaddata -un "$file" -db phiX/phiX --output kneaddata_out/ --trimmomatic /Users/triciavanlaar/miniforge3/envs/metagenomics/share/trimmomatic-0.39-2 -t 4 --trimmomatic-options "SLIDINGWINDOW:4:20 MINLEN:50" --bowtie2-options "--very-sensitive --dovetail" --remove-intermediate-output
+done
+
+##Again, you will want to replace my trimmomatic path with yours. Next, we can run the script.
+
+bash run_kneaddata.sh
+
+#this should iterate everything for you. You can always use a script like this any time you are having to process multiple reads on a regular computer and can try the parallel command if you have more power. 
+
+#if you explore the kneaddata_out folder, you'll notice 3 files for each read. One is the log, one is the cleaned up file, and one has the contaminants. Let's move the contaminants to their own folder.
+
+mkdir kneaddata_out/contam_seq
+mv kneaddata_out/*contam.fastq kneaddata_out/contam_seq
+
+##this command creates a folder for your clean reads. The next command moves all clean reads to that folder.
+mkdir kneaddata_out/clean_seq
+mv kneaddata_out/*.fastq kneaddata_out/clean_seq
+
+##now we can start analyzing!
+
+##create a folder for your humann output
+mkdir humann_out
+
+##we have options again. We can run a bash script to do one sample at a time. Create run_humann.sh
+
+#!/bin/bash
+
+# Directory where the output will be stored (basically creating the variable for below)
+output_dir="humann_out"
+
+# Loop over each fastq file in the kneaddata_out/clean_seq directory
+for file in kneaddata_out/clean_seq/*fastq; do
+    # Extract filename without extension to use as output subdirectory
+    base_name=$(basename "$file" .fastq)
+
+    # Run humann for each file, one at a time
+    humann --threads 1 --input "$file" --output "${output_dir}/${base_name}"
+done
+
+echo "All humann processes completed."
+
+#now we're ready to run
+
+bash run_humann.sh
+
+##we can also run in parallel using 
+parallel -j 1 'humann --threads 1 --input {} --output humann_out/{/.}' ::: kneaddata_out/clean_seq/*fastq
+
+#if you get an error that "the diamond should be updated", you should install the version it asks for, then run your script again
+
+mamba install -c bioconda diamond=2.0.15
+
+##next we will want to merge all of the metaPhlAn (taxonomy) results from all runs. We have to look for the merge_metaphlan_tables.py file. I'd make a copy and put it in your working directory so you don't have to provide the full path
+
+merge_metaphlan_tables.py humann_out/SRS*/SRS*/*_metaphlan_bugs_list.tsv > metaphlan_merged.tsv ##this creates a merged file in your working directory
+
+#you will want to add the location data to the top row, so you will want to replace row 1 of your merged file with row 1 of the file I provided to you called metaphlan merged header. You basically want this top row to reflect the metadata feature you're interested in which is body location in this case. Delete the second row so you should have row 1 with the locations and row two should immediately start the data
+
+#You can pull out all reads assigned to a taxonomic group using the command
+grep. This will give you a list of all reads assigned to the taxonomic group at the
+percentage of the metagenome belonging to that taxonomic group
+
+grep g__Gemella metaphlan_merged.tsv
+#this command (copy and paste the whole thing) will pull out all reads assigned to the genus Gemella
+
+#you can make a heat map of the most abundant species. Changing the number after ftop will change the number of species included. Changing the word after colormap can change the color
+hclust2.py -i metaphlan_merged.tsv -o abundance.png --ftop 40 --f_dist_f braycurtis --cell_aspect_ratio 0.5 -l  --flabel_size 6 --slabel_size 6 --max_flabel_len 100 --max_slabel_len 100 --minv 0.1 --dpi 300 --colormap winter
+
+##you may get some warnings, but you should see the abundance file generated.
+
+##Move all pathabundance.tsv files from their individual folders (should be in the
+humann_out) to a new folder (modify the commands above). I called my new folder pathabundance
+
+mkdir pathabundance
+
+mv humann_out/SRS*/*pathabundance.tsv pathabundance
+
+##merge the tables
+
+humann_join_tables --input pathabundance/ --file_name pathabundance --output humann_pathabundance.tsv
+
+##Convert to relative abundance (normalizes each sample to represent a fraction of the
+whole instead of individual read numbers)
+humann_renorm_table --input humann_pathabundance.tsv --units cpm --output humann_pathabundance_relab.tsv
+
+##identify any differentially expressed metabolic pathways based on part of the body
+
+humann_associate --input humann_pathabundance_relab.tsv --last-metadatum location --focal-metadatum location --focal-type categorical --output stats.txt
+
+##you may get an error that the command is not found. You will need to find the humann_associate file, move it to your working directory, and then run this command 
+
+python3 humann_associate.py --input humann_pathabundance_relab.tsv --last-metadatum location --focal-metadatum location --focal-type categorical --output stats.txt
+
