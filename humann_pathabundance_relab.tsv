@@ -1,87 +1,56 @@
-FEATURE	SRS011086	SRS011098	SRS011152	SRS011343	SRS013723	SRS013950	SRS014124	SRS014271	SRS014477	SRS015038	SRS015044	SRS015057	SRS015064	SRS015215	SRS015378	SRS015537	SRS015574	SRS015803	SRS015893	SRS016037	SRS016501	SRS016575	SRS016740	SRS019129	SRS063215	SRS097871	SRS104521	SRS143036	SRS148157	SRS148290
-location	tongue_dorsum	supragingival_plaque	supragingival_plaque	supragingival_plaque	supragingival_plaque	subgingival_plaque	tongue_dorsum	tongue_dorsum	subgingival_plaque	tongue_dorsum	supragingival_plaque	tongue_dorsum	subgingival_plaque	supragingival_plaque	supragingival_plaque	tongue_dorsum	supragingival_plaque	supragingival_plaque	tongue_dorsum	tongue_dorsum	tongue_dorsum	supragingival_plaque	tongue_dorsum	subgingival_plaque	subgingival_plaque	subgingival_plaque	subgingival_plaque	subgingival_plaque	subgingival_plaque	subgingival_plaque
-UNMAPPED	779637	0	0	760079	0	0	761187	0	0	0	0	0	0	0	781202	632630	0	0	0	831033	679515	0	0	0	0	0	0	0	0	0
-UNINTEGRATED	217864	0	0	238865	0	0	235258	0	0	0	0	0	0	0	218289	357980	0	0	0	168066	306370	0	0	0	0	0	0	0	0	0
-UNINTEGRATED|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	108750	0	0	0	0	0	0	0	0	0
-UNINTEGRATED|g__Streptococcus.s__Streptococcus_infantis	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8732.13	0	0	0	0	0	0	0	0	0
-UNINTEGRATED|g__Streptococcus.s__Streptococcus_parasanguinis	85735	0	0	0	0	0	0	0	0	0	0	0	0	0	0	144932	0	0	0	0	21978.4	0	0	0	0	0	0	0	0	0
-UNINTEGRATED|g__Streptococcus.s__Streptococcus_salivarius	57058.4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	82919.7	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-UNINTEGRATED|unclassified	0	0	0	177341	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	38761.9	0	0	0	0	0	0	0	0	0	0
-ANAGLYCOLYSIS-PWY: glycolysis III (from glucose)	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	476.55	0	0	0	0	0	0	0	0	0
-ASPASN-PWY: superpathway of L-aspartate and L-asparagine biosynthesis	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	435.947	0	0	0	0	377.646	0	0	0	0	0	0	0	0	0
-ASPASN-PWY: superpathway of L-aspartate and L-asparagine biosynthesis|g__Streptococcus.s__Streptococcus_parasanguinis	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	435.947	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-COA-PWY: coenzyme A biosynthesis I (prokaryotic)	0	0	0	0	0	0	282.246	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-DTDPRHAMSYN-PWY: dTDP-&beta;-L-rhamnose biosynthesis	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	391.967	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-DTDPRHAMSYN-PWY: dTDP-&beta;-L-rhamnose biosynthesis|g__Streptococcus.s__Streptococcus_parasanguinis	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	248.944	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-"GLCMANNANAUT-PWY: superpathway of N-acetylglucosamine, N-acetylmannosamine and N-acetylneuraminate degradation"	0	0	0	348.956	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-GLUCONEO-PWY: gluconeogenesis I	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	469.934	0	0	0	0	0	0	0	0	0
-HEMESYN2-PWY: heme b biosynthesis II (oxygen-independent)	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	334.48	0	0	0	0	0	0	0	0	0
-HEMESYN2-PWY: heme b biosynthesis II (oxygen-independent)|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	334.48	0	0	0	0	0	0	0	0	0
-HISDEG-PWY: L-histidine degradation I	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	365.865	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-HISDEG-PWY: L-histidine degradation I|g__Streptococcus.s__Streptococcus_parasanguinis	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	365.865	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-LACTOSECAT-PWY: lactose and galactose degradation I	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	432.554	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-LACTOSECAT-PWY: lactose and galactose degradation I|g__Streptococcus.s__Streptococcus_parasanguinis	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	338.432	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-NONOXIPENT-PWY: pentose phosphate pathway (non-oxidative branch) I	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	318.271	0	0	0	0	0	0	0	0	0
-NONOXIPENT-PWY: pentose phosphate pathway (non-oxidative branch) I|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	267.882	0	0	0	0	0	0	0	0	0
-PPGPPMET-PWY: ppGpp metabolism	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	306.037	0	0	0	0	0	0	0	0	0
-PWY-1042: glycolysis IV	0	0	0	0	0	0	249.823	0	0	0	0	0	0	0	0	0	0	0	0	0	787.919	0	0	0	0	0	0	0	0	0
-PWY-4041: &gamma;-glutamyl cycle	299.47	0	0	0	0	0	334.32	0	0	0	0	0	0	0	0	510.778	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY-4041: &gamma;-glutamyl cycle|g__Streptococcus.s__Streptococcus_parasanguinis	185.063	0	0	0	0	0	0	0	0	0	0	0	0	0	0	280.22	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY-5667: CDP-diacylglycerol biosynthesis I	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	421.073	0	0	0	0	0	0	0	0	0
-PWY-5667: CDP-diacylglycerol biosynthesis I|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	397.004	0	0	0	0	0	0	0	0	0
-PWY-5695: inosine 5'-phosphate degradation	0	0	0	0	0	0	252.866	0	0	0	0	0	0	0	0	0	0	0	0	0	291.925	0	0	0	0	0	0	0	0	0
-PWY-5941: glycogen degradation II	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	405.577	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY-6121: 5-aminoimidazole ribonucleotide biosynthesis I	360.936	0	0	0	0	0	378.377	0	0	0	0	0	0	0	180.328	383.315	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY-6121: 5-aminoimidazole ribonucleotide biosynthesis I|g__Streptococcus.s__Streptococcus_parasanguinis	145.225	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II	335.358	0	0	0	0	0	367.679	0	0	0	0	0	0	0	164.134	350.73	0	0	0	0	396.719	0	0	0	0	0	0	0	0	0
-PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II|g__Streptococcus.s__Streptococcus_parasanguinis	130.872	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II|g__Streptococcus.s__Streptococcus_salivarius	203.795	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY-6123: inosine-5'-phosphate biosynthesis I	128.683	0	0	0	0	0	240.465	0	0	0	0	0	0	0	0	494.351	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY-6124: inosine-5'-phosphate biosynthesis II	0	0	0	0	0	0	239.439	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY-6125: superpathway of guanosine nucleotides de novo biosynthesis II	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	354.571	0	0	0	0	0	0	0	0	0
-PWY-6147: 6-hydroxymethyl-dihydropterin diphosphate biosynthesis I	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	448.892	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY-6151: S-adenosyl-L-methionine salvage I	378.614	0	0	0	0	0	0	0	0	0	0	0	0	0	0	513.284	0	0	0	0	438.373	0	0	0	0	0	0	0	0	0
-PWY-6151: S-adenosyl-L-methionine salvage I|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	426.508	0	0	0	0	0	0	0	0	0
-PWY-6151: S-adenosyl-L-methionine salvage I|g__Streptococcus.s__Streptococcus_salivarius	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	141.918	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY-6163: chorismate biosynthesis from 3-dehydroquinate	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	385.929	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis	335.358	0	0	0	0	0	367.679	0	0	0	0	0	0	0	164.134	350.73	0	0	0	0	396.719	0	0	0	0	0	0	0	0	0
-PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis|g__Streptococcus.s__Streptococcus_parasanguinis	130.872	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis|g__Streptococcus.s__Streptococcus_salivarius	203.795	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY-6609: adenine and adenosine salvage III	660.502	0	0	0	0	0	0	0	0	0	0	0	0	0	0	580.95	0	0	0	0	575.887	0	0	0	0	0	0	0	0	0
-PWY-6609: adenine and adenosine salvage III|g__Streptococcus.s__Streptococcus_infantis	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	56.6698	0	0	0	0	0	0	0	0	0
-PWY-6609: adenine and adenosine salvage III|g__Streptococcus.s__Streptococcus_parasanguinis	280.137	0	0	0	0	0	0	0	0	0	0	0	0	0	0	389.162	0	0	0	0	142.955	0	0	0	0	0	0	0	0	0
-PWY-6936: seleno-amino acid biosynthesis (plants)	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	576.799	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY-6936: seleno-amino acid biosynthesis (plants)|g__Streptococcus.s__Streptococcus_parasanguinis	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	305.449	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY-7111: pyruvate fermentation to isobutanol (engineered)	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	619.404	0	0	0	0	0	0	0	0	0
-PWY-7197: pyrimidine deoxyribonucleotide phosphorylation	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	406.455	0	0	0	0	0	0	0	0	0
-PWY-7199: pyrimidine deoxyribonucleosides salvage	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	400.823	0	0	0	0	0	0	0	0	0
-PWY-7208: superpathway of pyrimidine nucleobases salvage	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	453.974	0	0	0	0	0	0	0	0	0
-PWY-7208: superpathway of pyrimidine nucleobases salvage|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	453.974	0	0	0	0	0	0	0	0	0
-PWY-7220: adenosine deoxyribonucleotides de novo biosynthesis II	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	654.172	0	0	0	0	0	0	0	0	0
-PWY-7221: guanosine ribonucleotides de novo biosynthesis	0	0	0	0	0	0	290.37	0	0	0	0	0	0	0	0	0	0	0	0	391.423	321.6	0	0	0	0	0	0	0	0	0
-PWY-7222: guanosine deoxyribonucleotides de novo biosynthesis II	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	654.172	0	0	0	0	0	0	0	0	0
-PWY-7228: superpathway of guanosine nucleotides de novo biosynthesis I	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	397.773	0	0	0	0	0	0	0	0	0
-PWY-7238: sucrose biosynthesis II	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	433.048	0	0	0	0	500.715	0	0	0	0	0	0	0	0	0
-PWY-7238: sucrose biosynthesis II|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	358.94	0	0	0	0	0	0	0	0	0
-PWY-7356: thiamine diphosphate salvage IV (yeast)	0	0	0	315.374	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY-7356: thiamine diphosphate salvage IV (yeast)|unclassified	0	0	0	315.374	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY-7663: gondoate biosynthesis (anaerobic)	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	475.4	0	0	0	0	0	0	0	0	0
-PWY-7663: gondoate biosynthesis (anaerobic)|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	400.452	0	0	0	0	0	0	0	0	0
-PWY-7851: coenzyme A biosynthesis II (eukaryotic)	0	0	0	0	0	0	246.484	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY-8178: pentose phosphate pathway (non-oxidative branch) II	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	334.727	0	0	0	0	0	0	0	0	0
-PWY-I9: L-cysteine biosynthesis VI (from L-methionine)	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	314.327	0	0	0	0	0	0	0	0	0
-PWY0-1296: purine ribonucleosides degradation	0	0	0	0	0	0	305.728	0	0	0	0	0	0	0	0	701.849	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY0-1296: purine ribonucleosides degradation|g__Streptococcus.s__Streptococcus_parasanguinis	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	391.254	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY0-1319: CDP-diacylglycerol biosynthesis II	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	421.073	0	0	0	0	0	0	0	0	0
-PWY0-1319: CDP-diacylglycerol biosynthesis II|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	397.004	0	0	0	0	0	0	0	0	0
-PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing)	0	0	0	392.17	0	0	0	0	0	0	0	0	0	0	0	499.652	0	0	0	509.247	471.489	0	0	0	0	0	0	0	0	0
-PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing)|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	471.489	0	0	0	0	0	0	0	0	0
-PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing)|g__Streptococcus.s__Streptococcus_salivarius	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	340.083	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing)|unclassified	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	426.788	0	0	0	0	0	0	0	0	0	0
-PWY0-862: (5Z)-dodecenoate biosynthesis I	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	542.783	0	0	0	0	0	0	0	0	0
-PWY0-862: (5Z)-dodecenoate biosynthesis I|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	475.102	0	0	0	0	0	0	0	0	0
-PWY66-429: fatty acid biosynthesis initiation (mitochondria)	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	338.568	0	0	0	0	295.099	0	0	0	0	0	0	0	0	0
-PWY66-429: fatty acid biosynthesis initiation (mitochondria)|g__Streptococcus.s__Streptococcus_parasanguinis	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	93.5715	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-THRESYN-PWY: superpathway of L-threonine biosynthesis	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	354.271	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-UDPNAGSYN-PWY: UDP-N-acetyl-D-glucosamine biosynthesis I	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	434.861	0	0	0	0	304.028	0	0	0	0	0	0	0	0	0
-VALSYN-PWY: L-valine biosynthesis	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	600.711	0	0	0	0	0	0	0	0	0
+FEATURE	SRS011098	SRS011152	SRS011343	SRS013723	SRS015893	SRS016037	SRS016501	SRS016740
+location	supragingival_plaque	supragingival_plaque	supragingival_plaque	supragingival_plaque	tongue_dorsum	tongue_dorsum	tongue_dorsum	tongue_dorsum
+UNMAPPED	0	0	760079	0	0	831033	679515	0
+UNINTEGRATED	0	0	238865	0	0	168066	306370	0
+UNINTEGRATED|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	108750	0
+UNINTEGRATED|g__Streptococcus.s__Streptococcus_infantis	0	0	0	0	0	0	8732.13	0
+UNINTEGRATED|g__Streptococcus.s__Streptococcus_parasanguinis	0	0	0	0	0	0	21978.4	0
+UNINTEGRATED|unclassified	0	0	177341	0	0	38761.9	0	0
+ANAGLYCOLYSIS-PWY: glycolysis III (from glucose)	0	0	0	0	0	0	476.55	0
+ASPASN-PWY: superpathway of L-aspartate and L-asparagine biosynthesis	0	0	0	0	0	0	377.646	0
+"GLCMANNANAUT-PWY: superpathway of N-acetylglucosamine, N-acetylmannosamine and N-acetylneuraminate degradation"	0	0	348.956	0	0	0	0	0
+GLUCONEO-PWY: gluconeogenesis I	0	0	0	0	0	0	469.934	0
+HEMESYN2-PWY: heme b biosynthesis II (oxygen-independent)	0	0	0	0	0	0	334.48	0
+HEMESYN2-PWY: heme b biosynthesis II (oxygen-independent)|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	334.48	0
+NONOXIPENT-PWY: pentose phosphate pathway (non-oxidative branch) I	0	0	0	0	0	0	318.271	0
+NONOXIPENT-PWY: pentose phosphate pathway (non-oxidative branch) I|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	267.882	0
+PPGPPMET-PWY: ppGpp metabolism	0	0	0	0	0	0	306.037	0
+PWY-1042: glycolysis IV	0	0	0	0	0	0	787.919	0
+PWY-5667: CDP-diacylglycerol biosynthesis I	0	0	0	0	0	0	421.073	0
+PWY-5667: CDP-diacylglycerol biosynthesis I|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	397.004	0
+PWY-5695: inosine 5'-phosphate degradation	0	0	0	0	0	0	291.925	0
+PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II	0	0	0	0	0	0	396.719	0
+PWY-6125: superpathway of guanosine nucleotides de novo biosynthesis II	0	0	0	0	0	0	354.571	0
+PWY-6151: S-adenosyl-L-methionine salvage I	0	0	0	0	0	0	438.373	0
+PWY-6151: S-adenosyl-L-methionine salvage I|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	426.508	0
+PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis	0	0	0	0	0	0	396.719	0
+PWY-6609: adenine and adenosine salvage III	0	0	0	0	0	0	575.887	0
+PWY-6609: adenine and adenosine salvage III|g__Streptococcus.s__Streptococcus_infantis	0	0	0	0	0	0	56.6698	0
+PWY-6609: adenine and adenosine salvage III|g__Streptococcus.s__Streptococcus_parasanguinis	0	0	0	0	0	0	142.955	0
+PWY-7111: pyruvate fermentation to isobutanol (engineered)	0	0	0	0	0	0	619.404	0
+PWY-7197: pyrimidine deoxyribonucleotide phosphorylation	0	0	0	0	0	0	406.455	0
+PWY-7199: pyrimidine deoxyribonucleosides salvage	0	0	0	0	0	0	400.823	0
+PWY-7208: superpathway of pyrimidine nucleobases salvage	0	0	0	0	0	0	453.974	0
+PWY-7208: superpathway of pyrimidine nucleobases salvage|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	453.974	0
+PWY-7220: adenosine deoxyribonucleotides de novo biosynthesis II	0	0	0	0	0	0	654.172	0
+PWY-7221: guanosine ribonucleotides de novo biosynthesis	0	0	0	0	0	391.423	321.6	0
+PWY-7222: guanosine deoxyribonucleotides de novo biosynthesis II	0	0	0	0	0	0	654.172	0
+PWY-7228: superpathway of guanosine nucleotides de novo biosynthesis I	0	0	0	0	0	0	397.773	0
+PWY-7238: sucrose biosynthesis II	0	0	0	0	0	0	500.715	0
+PWY-7238: sucrose biosynthesis II|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	358.94	0
+PWY-7356: thiamine diphosphate salvage IV (yeast)	0	0	315.374	0	0	0	0	0
+PWY-7356: thiamine diphosphate salvage IV (yeast)|unclassified	0	0	315.374	0	0	0	0	0
+PWY-7663: gondoate biosynthesis (anaerobic)	0	0	0	0	0	0	475.4	0
+PWY-7663: gondoate biosynthesis (anaerobic)|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	400.452	0
+PWY-8178: pentose phosphate pathway (non-oxidative branch) II	0	0	0	0	0	0	334.727	0
+PWY-I9: L-cysteine biosynthesis VI (from L-methionine)	0	0	0	0	0	0	314.327	0
+PWY0-1319: CDP-diacylglycerol biosynthesis II	0	0	0	0	0	0	421.073	0
+PWY0-1319: CDP-diacylglycerol biosynthesis II|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	397.004	0
+PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing)	0	0	392.17	0	0	509.247	471.489	0
+PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing)|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	471.489	0
+PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing)|unclassified	0	0	0	0	0	426.788	0	0
+PWY0-862: (5Z)-dodecenoate biosynthesis I	0	0	0	0	0	0	542.783	0
+PWY0-862: (5Z)-dodecenoate biosynthesis I|g__Haemophilus.s__Haemophilus_parainfluenzae	0	0	0	0	0	0	475.102	0
+PWY66-429: fatty acid biosynthesis initiation (mitochondria)	0	0	0	0	0	0	295.099	0
+UDPNAGSYN-PWY: UDP-N-acetyl-D-glucosamine biosynthesis I	0	0	0	0	0	0	304.028	0
+VALSYN-PWY: L-valine biosynthesis	0	0	0	0	0	0	600.711	0

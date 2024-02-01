@@ -143,6 +143,8 @@ humann_join_tables --input pathabundance/ --file_name pathabundance --output hum
 whole instead of individual read numbers)
 humann_renorm_table --input humann_pathabundance.tsv --units cpm --output humann_pathabundance_relab.tsv
 
+##replace header in humann_pathabundance_relab.tsv with provided header
+
 ##identify any differentially expressed metabolic pathways based on part of the body
 
 humann_associate --input humann_pathabundance_relab.tsv --last-metadatum location --focal-metadatum location --focal-type categorical --output stats.txt
